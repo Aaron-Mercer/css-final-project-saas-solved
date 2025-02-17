@@ -427,7 +427,7 @@ hr {
 .hire-us h3,
 .hire-us p,
 .hire-us h4 {
-  width: max-content;
+  width: 100%;
   margin: 0;
 }
 
@@ -578,6 +578,10 @@ footer a {
   flex-direction: column;
 }
 
+.quote {
+  width: 100%;
+}
+
 @media screen and (max-width: 1023px) {
   .trigram {
     display: block;
@@ -639,39 +643,16 @@ footer a {
     text-align: center;
   }
 
+  .row-logo {
+    position: static;
+    height: 40px;
+  }
+
   .HDR-logos {
-    width: 100%;
-    height: 309px;
-  }
-
-  .google-logo {
-    left: 15%;
-    bottom: 12%;
-  }
-
-  .asnana-logo {
-    left: 64%;
-  }
-
-  .atlass-logo {
-    left: 30%;
-  }
-
-  .calendar-logo {
-    left: 45%;
-  }
-
-  .ads-logo {
-    left: 6%;
-  }
-
-  .paypal-logo {
-    right: 15%;
-  }
-
-  .weave-logo {
-    left: 10%;
-    top: 60%;
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+    width: auto;
   }
 
   .whyFront {
@@ -699,6 +680,7 @@ footer a {
   .quadchart {
     justify-content: center;
     width: auto;
+    gap: 20px;
   }
 
   .HoC,
@@ -706,7 +688,7 @@ footer a {
   .cancel,
   .money-back {
     height: 219px;
-    width: 335px;
+    width: 48%;
   }
 
   .hire-us {
@@ -761,42 +743,46 @@ footer a {
 }
 
 @media screen and (max-width: 767px) {
+  .top-info h2 {
+    font-size: 40px;
+  }
+
+  .top-info p {
+    text-align: center;
+  }
+
+  .row-logo {
+    position: static;
+    height: 40px;
+  }
+
   .HDR-logos {
-    height: 500px;
-    margin-bottom: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 26px;
+    display: flex;
+    gap: 20px;
+    width: auto;
   }
 
-  .google-logo {
-    left: 5%;
-    top: 0%;
+  .whyFront-HDR,
+  h3,
+  .hire-content,
+  .hire-info-card,
+  .quote,
+  .form-top,
+  .hire-HDR p,
+  .break,
+  .hire-us p {
+    width: 100%;
   }
 
-  .asnana-logo {
-    left: 64%;
-    top: 0%;
+  .hire-HDR {
+    width: 73%;
   }
 
-  .atlass-logo {
-    left: 15%;
-  }
-
-  .calendar-logo {
-    top: 115%;
-  }
-
-  .ads-logo {
-    left: -9%;
-    top: 95%;
-  }
-
-  .paypal-logo {
-    right: 44%;
-    top: 80%;
-  }
-
-  .weave-logo {
-    left: -6%;
-    top: 59%;
+  .pricing-section {
+    margin-top: 140px;
   }
 
   .left-wing,
@@ -825,10 +811,18 @@ footer a {
     margin-right: 15px;
   }
 
+  .HoC,
+  .img-included,
+  .cancel,
+  .money-back {
+    width: 100%;
+  }
+
   .hire-info-card {
     flex-direction: column;
     align-items: flex-start;
     margin: auto;
+    padding-left: 0;
   }
 
   .client {
